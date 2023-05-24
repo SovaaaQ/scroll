@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    min-height: 300px;
+    background-color: brown;
+    color: white;
+}
+
+@keyframes header{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.header-fixed{
+    width: 100%;
+    position: fixed;
+    animation: header 0.3s ease;
+    top: 0;
+    left: 0;
+}
+
+.section-1{
+    min-height: 500px;
+    background-color: cadetblue;
+}
+
+.section-2{
+    min-height: 500px;
+    background-color: rgb(10, 110, 94);
+}
+
+.section-3{
+    min-height: 500px;
+    background-color: rgb(10, 128, 46);
+}
+
+.footer{
+    min-height: 300px;
+    background-color: cornflowerblue;
+}
+
+.arr{
+    display: none;
+   
+}
+
+.arr-visiable{
+    display: block;
+    position: fixed;
+    bottom: 20%;
+    left: 80%;
+}
+
+.progressbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+p{
+    margin-top: 600px;
+}

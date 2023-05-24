@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #162664;
+}
+
+.wrap{
+    height: 100vh;
+    max-height: 100%;
+    overflow-x: hidden;
+    perspective: 1px;
+    perspective-origin: center top;
+    transform-style: preserve-3d;
+}
+
+.header{
+    width: 1110px;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.header_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/img/fon.jpg");
+    background-color: #af6824;
+    background-size: cover;
+    background-position: center center;
+    transform-origin: center top;
+    transform: translateZ(-0.9px) translateX(-8px) scale(1.90);
+}
+
+.border-box {
+    position: absolute;
+    width: 64%;
+    Padding: 0 110px;
+    Z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+
+.header_title{
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 200px;
+    margin-top: 0;
+    margin-left: 150px;
+    margin-bottom: 28px;
+    color: white;
+    text-shadow: 2px 2px #700808;
+}
+
+.header_text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-shadow: 2px 2px #2c2c2c;
+}
+
+.paral_w{
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    background: #af6824;
+    margin-left: 150px;
+    margin-top: -30px;
+    transform: translateZ(-1px) scale(2) translateY(100px) translateX(-145px)
+
+}
+
+.h2{
+    padding-top: 30px;
+    text-align: -webkit-center;
+}
+
+main{
+    background-color: #2f3e83;
+
+    transform: translateZ(0);
+    width: 1110px;
+    height: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
